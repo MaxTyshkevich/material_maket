@@ -1,16 +1,24 @@
+import { ThemeProvider } from '@mui/material/styles';
 import { Button, Container } from '@mui/material';
 import { useEffect } from 'react';
 
+import theme from './styles/theme';
+import AppBar from './components/Appbar';
+
 const App = () => {
+  /*  const theme = useTheme();
+   console.log(theme);
+  */
+
   useEffect(() => {
-    window.document.title = 'Material UI - Home';
+    document.title = 'Material UI - Home';
   }, []);
 
   return (
-    <Container maxWidth="xl" sx={{ background: '#fff' }}>
-      <Button>Wello world</Button>
-
-      {/* 
+    <ThemeProvider theme={theme}>
+      <Container maxWidth="xl" sx={{ background: '#fff' }}>
+        <AppBar />
+        {/* 
       AppBar
       banner
       Promotions
@@ -20,7 +28,10 @@ const App = () => {
       searchbox
       appDrower
       */}
-    </Container>
+
+        <Button variant="contained">Wello world</Button>
+      </Container>
+    </ThemeProvider>
   );
 };
 
