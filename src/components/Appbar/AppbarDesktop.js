@@ -1,14 +1,12 @@
 import React from 'react';
 import { AppBarContainer, AppBarHeader, AppBarList } from '../../styles/appbar';
-import { ListItemText } from '@mui/material';
+import { ListItemText, ListItemButton, ListItemIcon } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
+import Actions from './Actions';
+
+const IS_MOBILE = false;
 
 export const AppbarDesktop = () => {
-  /* 
-  Appbar container 
-  header
-  list
-*/
-
   return (
     <AppBarContainer>
       <AppBarHeader>My Bags</AppBarHeader>
@@ -17,7 +15,13 @@ export const AppbarDesktop = () => {
         <ListItemText primary="Categories" />
         <ListItemText primary="Products" />
         <ListItemText primary="Contact Us" />
+        <ListItemButton>
+          <ListItemIcon>
+            <SearchIcon />
+          </ListItemIcon>
+        </ListItemButton>
       </AppBarList>
+      <Actions isMobile={IS_MOBILE} />
     </AppBarContainer>
   );
 };
