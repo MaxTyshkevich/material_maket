@@ -38,9 +38,14 @@ export const ActionIconsContainerMobile = styled(Box)(() => ({
   borderTop: `1px solid ${Colors.border}`,
   '& .MuiSvgIcon-root': {
     color: Colors.secondary,
+    fontSize: '2rem',
   },
 }));
 
 export const ActionIconsContainerDesktop = styled(Box)(() => ({
   flexGrow: 0,
+
+  '& .MuiSvgIcon-root': {
+    fontSize: '1rem',
+  },
 }));

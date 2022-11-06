@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 import theme from './styles/theme';
 import AppBar from './components/Appbar';
+import { Banner } from './components/Banner';
 
 const App = () => {
   /*  const theme = useTheme();
@@ -18,6 +19,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Container maxWidth="xl" sx={{ background: '#fff' }}>
         <AppBar />
+        <Banner />
         {/* 
       AppBar
       banner
@@ -28,8 +30,6 @@ const App = () => {
       searchbox
       appDrower
       */}
-
-        <Button variant="contained">Wello world</Button>
       </Container>
     </ThemeProvider>
   );

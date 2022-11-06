@@ -9,14 +9,14 @@ import ShoppingCart from '@mui/icons-material/ShoppingCart';
 import PersonIcon from '@mui/icons-material/Person';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
-const styles = {
+const styles = ({ theme }) => ({
   display: 'flex',
   justifyContent: 'center',
   '& .MuiListItemIcon-root': {
     display: 'flex',
     justifyContent: 'center',
   },
-};
+});
 
 const Actions = ({ isMobile }) => {
   const Component = isMobile
