@@ -3,7 +3,7 @@ import { Typography, useMediaQuery, useTheme } from '@mui/material';
 import {
   BannerContainer,
   BannerContent,
-  BannerDiscription,
+  BannerDescription,
   BannerTittle,
   BannerImage,
 } from '../../styles/baner';
@@ -18,12 +18,12 @@ export const Banner = () => {
       <BannerContent>
         <Typography variant="h6">Huge Collection</Typography>
         <BannerTittle variant="h2 ">New Bags</BannerTittle>
-        <BannerDiscription>
+        <BannerDescription>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
           maiores iure deserunt sunt vel, et doloribus quibusdam, voluptas qui
           dolor sequi, perferendis numquam assumenda porro veniam eligendi quis
           a. Libero!
-        </BannerDiscription>
+        </BannerDescription>
       </BannerContent>
     </BannerContainer>
   );

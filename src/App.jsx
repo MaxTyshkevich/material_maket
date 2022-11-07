@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import theme from './styles/theme';
 import AppBar from './components/Appbar';
 import { Banner } from './components/Banner';
+import Promotion from './components/Promotion';
 
 const App = () => {
   /*  const theme = useTheme();
@@ -20,6 +21,8 @@ const App = () => {
       <Container maxWidth="xl" sx={{ background: '#fff' }}>
         <AppBar />
         <Banner />
+        <Promotion />
+
         {/* 
       AppBar
       banner

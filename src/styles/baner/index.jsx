@@ -28,13 +28,23 @@ export const BannerContent = styled(Box)((...props) => {
 });
 
 export const BannerTittle = styled(Box)(({ theme }) => ({
-  fontSize: 70,
+  fontSize: 72,
+  letterSpacing: 1.5,
   [theme.breakpoints.down('md')]: {
-    fontSize: 48,
+    fontSize: 42,
   },
 }));
 
-export const BannerDiscription = styled(Typography)(({ theme }) => ({}));
+export const BannerDescription = styled(Typography)(({ theme }) => ({
+  lineHeight: 1.25,
+  letterSpacing: 1.25,
+  marginBottom: '3em',
+  [theme.breakpoints.down('sm')]: {
+    lineHeight: 1.15,
+    letterSpacing: 1.15,
+    marginBottom: '1.5em',
+  },
+}));
 
 export const BannerImage = styled('img')(({ src, theme }) => ({
   src: `url(${src})`,
