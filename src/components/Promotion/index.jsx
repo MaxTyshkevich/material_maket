@@ -16,7 +16,6 @@ const Promotion = () => {
   const [messageIndex, setMessageIndex] = useState(0);
   const [show, setShow] = useState(true);
   const refContainer = useRef();
-  console.log(show);
 
   useEffect(() => {
     setTimeout(() => {

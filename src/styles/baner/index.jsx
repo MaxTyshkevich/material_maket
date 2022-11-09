@@ -17,7 +17,6 @@ export const BannerContainer = styled(Box)(({ theme }) => ({
 }));
 
 export const BannerContent = styled(Box)((...props) => {
-  console.log(props);
   return {
     display: 'flex',
     justifyContent: 'center',

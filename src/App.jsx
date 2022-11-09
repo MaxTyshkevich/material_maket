@@ -6,12 +6,9 @@ import theme from './styles/theme';
 import AppBar from './components/Appbar';
 import { Banner } from './components/Banner';
 import Promotion from './components/Promotion';
+import Product from './components/Product';
 
 const App = () => {
-  /*  const theme = useTheme();
-   console.log(theme);
-  */
-
   useEffect(() => {
     document.title = 'Material UI - Home';
   }, []);
@@ -22,7 +19,7 @@ const App = () => {
         <AppBar />
         <Banner />
         <Promotion />
-
+        <Product />
         {/* 
       AppBar
       banner

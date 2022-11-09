@@ -18,7 +18,7 @@ export const PromotionContainer = styled(Box)(({ theme }) => ({
 
 export const PromotionText = styled(Typography)(({ theme }) => ({
   fontFamily: 'Montez',
-  color: 'white',
+
   color: Colors.dove_gray,
   fontSize: '1.5rem',
 
