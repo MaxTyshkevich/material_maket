@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import { lighten } from 'polished';
 
 export const Colors = {
   primary: '#5f2c3e',
@@ -37,6 +38,27 @@ const theme = createTheme({
       defaultProps: {
         disableRipple: true,
         disableElevation: true,
+      },
+    },
+
+    myShopButton: {
+      styleOverrides: {
+        root: {
+          color: Colors.white,
+        },
+        primary: {
+          background: Colors.primary,
+          '&:hover': {
+            background: lighten(0.05, Colors.primary),
+          },
+        },
+
+        secondary: {
+          background: Colors.secondary,
+          '&:hover': {
+            background: lighten(0.05, Colors.secondary),
+          },
+        },
       },
     },
   },

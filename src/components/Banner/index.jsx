@@ -1,17 +1,15 @@
 import React from 'react';
-import { Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Typography } from '@mui/material';
 import {
   BannerContainer,
   BannerContent,
   BannerDescription,
   BannerTittle,
   BannerImage,
+  BannerShopButton,
 } from '../../styles/baner';
 
 export const Banner = () => {
-  const theme = useTheme();
-  const mobile = useMediaQuery(theme.breakpoints.down('md'));
-
   return (
     <BannerContainer>
       <BannerImage src={'/images/banner/banner.png'} />
@@ -24,6 +22,7 @@ export const Banner = () => {
           dolor sequi, perferendis numquam assumenda porro veniam eligendi quis
           a. Libero!
         </BannerDescription>
+        <BannerShopButton color="primary">Shop now</BannerShopButton>
       </BannerContent>
     </BannerContainer>
   );
