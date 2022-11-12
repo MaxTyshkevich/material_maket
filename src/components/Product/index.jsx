@@ -11,7 +11,7 @@ const Product = () => {
   const [goods, setGoods] = useState(products);
 
   return (
-    <Box sx={{ marginTop: '40px' }}>
+    <Box sx={{ marginTop: '40px', marginBottom: '40px' }}>
       <Typography
         variant={isMobile ? 'h5' : 'h4'}
         sx={{ marginBottom: '10px' }}

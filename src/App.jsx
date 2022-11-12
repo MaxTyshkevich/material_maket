@@ -7,6 +7,7 @@ import AppBar from './components/Appbar';
 import { Banner } from './components/Banner';
 import Promotion from './components/Promotion';
 import Product from './components/Product';
+import { Footer } from './components/Footer';
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
         <Banner />
         <Promotion />
         <Product />
+        <Footer />
         {/* 
       AppBar
       banner
