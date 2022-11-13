@@ -41,6 +41,18 @@ const theme = createTheme({
       },
     },
 
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          width: '250px',
+          background: Colors.primary,
+          color: Colors.secondary,
+          borderRadius: '0 100px 0 0',
+          border: `3px solid ${Colors.secondary}`,
+        },
+      },
+    },
+
     myShopButton: {
       styleOverrides: {
         root: {

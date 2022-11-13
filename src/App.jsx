@@ -1,5 +1,5 @@
 import { ThemeProvider } from '@mui/material/styles';
-import { Button, Container } from '@mui/material';
+import { Container } from '@mui/material';
 import { useEffect } from 'react';
 
 import theme from './styles/theme';
@@ -8,6 +8,8 @@ import { Banner } from './components/Banner';
 import Promotion from './components/Promotion';
 import Product from './components/Product';
 import { Footer } from './components/Footer';
+import { AppDrawer } from './components/Drawer';
+import { UIProvider } from './context/ui/index.jsx';
 
 const App = () => {
   useEffect(() => {
@@ -16,13 +18,15 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container maxWidth="xl" sx={{ background: '#fff' }}>
-        <AppBar />
-        <Banner />
-        <Promotion />
-        <Product />
-        <Footer />
-        {/* 
+      <UIProvider>
+        <Container maxWidth="xl" sx={{ background: '#fff' }}>
+          <AppBar />
+          <Banner />
+          <Promotion />
+          <Product />
+          <Footer />
+          <AppDrawer />
+          {/* 
       AppBar
       banner
       Promotions
@@ -32,7 +36,8 @@ const App = () => {
       searchbox
       appDrower
       */}
-      </Container>
+        </Container>
+      </UIProvider>
     </ThemeProvider>
   );
 };
