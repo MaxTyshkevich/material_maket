@@ -1,7 +1,7 @@
 {
   "name": "my_bags",
   "version": "0.1.0",
-  "home": "https://maxtyshkevich.github.io/material_maket/",
+  "homepage": "https://maxtyshkevich.github.io/material_maket/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
