@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { PromotionContainer, PromotionText } from '../../styles/promotion';
 import Slide from '@mui/material/Slide';
-import { Box } from '@mui/material';
+
 import { useRef } from 'react';
 
 const message = [

@@ -24,7 +24,11 @@ export const SingleProduct = ({ item, isMobile }) => {
   };
   return (
     <ProductCard raised onPointerEnter={handleEnter} onMouseLeave={handleLeave}>
-      <Image component="img" image={item.image} alt={item.name} />
+      <Image
+        component="img"
+        image={process.env.PUBLIC_URL + item.image}
+        alt={item.name}
+      />
       <ProductCardContent>
         <Typography
           variant={isMobile ? 'h6' : 'h5'}

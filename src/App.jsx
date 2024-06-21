@@ -26,16 +26,6 @@ const App = () => {
           <Product />
           <Footer />
           <AppDrawer />
-          {/* 
-      AppBar
-      banner
-      Promotions
-      title
-      product
-      footer
-      searchbox
-      appDrower
-      */}
         </Container>
       </UIProvider>
     </ThemeProvider>

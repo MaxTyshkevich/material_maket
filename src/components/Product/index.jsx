@@ -8,7 +8,7 @@ const Product = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-  const [goods, setGoods] = useState(products);
+  const [goods] = useState(products);
 
   return (
     <Box sx={{ marginTop: '40px', marginBottom: '40px' }}>

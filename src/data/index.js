@@ -5,7 +5,7 @@ export const products = [
     price: 129.99,
     description:
       'Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna',
-    image: '~/images/products/bag_01.png',
+    image: '/images/products/bag_01.png',
   },
   {
     id: 2,

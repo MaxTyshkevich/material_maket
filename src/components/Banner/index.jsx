@@ -12,7 +12,7 @@ import {
 export const Banner = () => {
   return (
     <BannerContainer>
-      <BannerImage src={'/images/banner/banner.png'} />
+      <BannerImage src={process.env.PUBLIC_URL + '/images/banner/banner.png'} />
       <BannerContent>
         <Typography variant="h6">Huge Collection</Typography>
         <BannerTittle variant="h2 ">New Bags</BannerTittle>
